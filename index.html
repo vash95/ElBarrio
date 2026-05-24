@@ -23,9 +23,9 @@
         <button class="menu-toggle" aria-label="Abrir menú" id="menuToggle">☰</button>
         <ul class="nav-links" id="navLinks">
           <li><a href="#ficha">Ficha</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
           <li><a href="#carta">Carta</a></li>
           <li><a href="#reservas">Reservas</a></li>
-          <li><a href="#logs">Logs</a></li>
         </ul>
       </nav>
 
@@ -38,7 +38,7 @@
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#reservas">Reservar</a>
-          <a class="btn btn-ghost" href="#carta">Ver carta destacada</a>
+          <a class="btn btn-ghost" href="#carta">Ver carta completa</a>
         </div>
       </div>
     </header>
@@ -64,28 +64,37 @@
             <h3>Horario</h3>
             <p>Martes a viernes: 07:00–00:00</p>
             <p>Sábados y domingos: 08:00–00:00</p>
+            <p>Lunes: cerrado por descanso</p>
           </article>
         </div>
       </section>
 
-      <section class="section alt" id="carta">
+      <section class="section alt" id="experiencia">
         <div class="container">
-          <p class="eyebrow">Carta destacada</p>
-          <h2>Ejemplos del menú</h2>
+          <p class="eyebrow">Más información</p>
+          <h2>Qué te vas a encontrar</h2>
           <div class="cards">
             <article class="card">
-              <h3>Chipirones con ali-oli</h3>
-              <p>Disponible en media o ración entera.</p>
+              <h3>Especialidad de la casa</h3>
+              <p>Raciones tradicionales castellanas, carnes a la brasa y cocina de producto local.</p>
             </article>
             <article class="card">
-              <h3>Morcilla de Zaratán</h3>
-              <p>Uno de los clásicos de la casa en formato ración.</p>
+              <h3>Espacio y capacidad</h3>
+              <p>Comedor interior amplio, terraza de temporada y ambiente familiar para grupos.</p>
             </article>
             <article class="card">
-              <h3>Entrecot y churrasco</h3>
-              <p>Selección de carnes a la plancha junto a otras especialidades.</p>
+              <h3>Servicios</h3>
+              <p>Opciones para celebraciones, menús cerrados y reservas anticipadas por teléfono o formulario.</p>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="section" id="carta">
+        <div class="container">
+          <p class="eyebrow">Carta</p>
+          <h2>Menú cargado</h2>
+          <div class="menu-grid" id="menuGrid"></div>
         </div>
       </section>
 
@@ -115,15 +124,6 @@
           </label>
           <button type="submit" class="btn btn-primary">Enviar solicitud</button>
         </form>
-      </section>
-
-      <section class="section alt" id="logs">
-        <div class="container">
-          <p class="eyebrow">Logs y seguimiento</p>
-          <h2>Registro de actividad en esta web</h2>
-          <p>Esta sección muestra eventos recientes del sitio para control básico.</p>
-          <ul id="logList" class="log-list"></ul>
-        </div>
       </section>
     </main>
 
