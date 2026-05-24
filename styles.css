@@ -86,7 +86,7 @@ h1 { font-size:clamp(2rem, 5vw, 3.6rem); margin:.3rem 0; }
 .section { padding:4.2rem 0; }
 .alt { background:var(--bg); }
 
-.info-grid, .cards { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); }
+.info-grid, .cards, .menu-grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); }
 .info-grid article, .card {
   background: var(--surface);
   border: 1px solid #2a2a31;
@@ -94,19 +94,19 @@ h1 { font-size:clamp(2rem, 5vw, 3.6rem); margin:.3rem 0; }
   padding: 1rem;
 }
 
+.card ul {
+  margin: 0.7rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.card li {
+  margin-bottom: 0.35rem;
+}
+
 .booking-form { display:grid; gap:.8rem; max-width:520px; }
 label { display:grid; gap:.4rem; font-weight:600; }
 input,button { border:none; border-radius:.7rem; padding:.75rem; font:inherit; }
 input { background:#0f0f10; color:var(--text); border:1px solid #2e2e36; }
-
-.log-list {
-  margin: 1rem 0 0;
-  padding-left: 1.1rem;
-}
-
-.log-list li {
-  margin-bottom: 0.5rem;
-}
 
 footer { text-align:center; color:var(--muted); padding:1.2rem; border-top:1px solid #2a2a31; }
 
