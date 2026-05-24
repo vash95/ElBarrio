@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Barrio | Restaurante en Valladolid</title>
+    <meta
+      name="description"
+      content="El Barrio: cocina contemporánea con raíces castellanas en el corazón de Valladolid."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="nav">
+        <a href="#inicio" class="brand">El Barrio</a>
+        <button class="menu-toggle" aria-label="Abrir menú" id="menuToggle">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#concepto">Concepto</a></li>
+          <li><a href="#menu">Carta</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#reserva">Reserva</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content container">
+        <p class="eyebrow">Valladolid · Plaza Mayor</p>
+        <h1>Cocina de barrio con alma moderna</h1>
+        <p>
+          Una experiencia gastronómica que mezcla producto local, creatividad y
+          el ambiente vibrante del centro histórico de Valladolid.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#reserva">Reservar mesa</a>
+          <a class="btn btn-ghost" href="#menu">Ver carta</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="concepto">
+        <div>
+          <p class="eyebrow">Nuestro concepto</p>
+          <h2>Tradición castellana, mirada actual</h2>
+          <p>
+            En El Barrio cuidamos cada detalle: recetas de siempre reinterpretadas
+            con técnicas contemporáneas, vinos de proximidad y una atención cálida
+            para que cada visita se convierta en un recuerdo.
+          </p>
+        </div>
+        <div class="features">
+          <article>
+            <h3>Producto de temporada</h3>
+            <p>Ingredientes frescos del mercado y productores de Castilla y León.</p>
+          </article>
+          <article>
+            <h3>Ambiente elegante</h3>
+            <p>Diseño acogedor, música suave y luz cuidada para cada momento.</p>
+          </article>
+          <article>
+            <h3>Cocina abierta</h3>
+            <p>Vive de cerca el ritmo del servicio y el mimo por cada plato.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt" id="menu">
+        <div class="container">
+          <p class="eyebrow">Carta destacada</p>
+          <h2>Sabores que cuentan historias</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Croqueta de lechazo</h3>
+              <p>Bechamel cremosa, jugo reducido y aire de tomillo.</p>
+              <span>9€</span>
+            </article>
+            <article class="card">
+              <h3>Bacalao confitado</h3>
+              <p>Parmentier de ajo asado y pilpil de pimientos del piquillo.</p>
+              <span>22€</span>
+            </article>
+            <article class="card">
+              <h3>Tarta de queso curado</h3>
+              <p>Textura fluida con helado artesano de miel y nueces.</p>
+              <span>8€</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="experiencia">
+        <p class="eyebrow">La experiencia</p>
+        <h2>Tu mesa en el corazón de la ciudad</h2>
+        <p>
+          Ideal para cenas especiales, reuniones informales o descubrir la nueva
+          cocina vallisoletana en un entorno sofisticado y cercano.
+        </p>
+        <ul class="highlights">
+          <li>Menú degustación disponible de jueves a domingo.</li>
+          <li>Opciones vegetarianas y maridaje personalizado.</li>
+          <li>Espacio privado para eventos de hasta 18 personas.</li>
+        </ul>
+      </section>
+
+      <section class="section alt" id="reserva">
+        <div class="container booking">
+          <div>
+            <p class="eyebrow">Reserva</p>
+            <h2>¿Nos vemos en El Barrio?</h2>
+            <p>
+              Abierto de martes a domingo · 13:30–16:00 y 20:30–23:30<br />
+              Calle Teresa Gil, 12 · Valladolid
+            </p>
+          </div>
+          <form class="booking-form">
+            <label>
+              Nombre
+              <input type="text" placeholder="Tu nombre" required />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="tu@email.com" required />
+            </label>
+            <label>
+              Fecha
+              <input type="date" required />
+            </label>
+            <label>
+              Personas
+              <input type="number" min="1" max="12" value="2" required />
+            </label>
+            <button type="submit" class="btn btn-primary">Solicitar reserva</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 El Barrio · Valladolid · Síguenos en Instagram @elbarrio_vll</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
