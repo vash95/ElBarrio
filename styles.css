@@ -39,7 +39,35 @@ a {
 }
 
 .nav { display:flex; justify-content:space-between; align-items:center; padding:1rem 4%; }
-.brand { font-family:"Playfair Display", serif; color:#fff; font-size:1.4rem; text-decoration:none; }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffd28a99;
+  border-radius: 999px;
+  background: #0000005f;
+  color: #ffd28a;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.brand-text {
+  white-space: nowrap;
+}
 .nav-links { display:flex; gap:1.2rem; list-style:none; }
 .nav-links a { color:var(--text); text-decoration:none; font-weight:600; }
 .menu-toggle { display:none; background:transparent; color:#fff; border:1px solid #fff4; border-radius:.5rem; padding:.35rem .6rem; }
